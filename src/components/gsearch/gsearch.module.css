@@ -1,0 +1,31 @@
+.Search {
+	background-color: #2b2a37;
+	width: 100%;
+}
+
+.InputBox {
+	height: 39px;
+	position: relative;
+	background-color: #2b2a37;
+	border: none;
+	-webkit-appearance: none;
+	color: dodgerblue;
+	text-align: center;
+	width: 80%;
+}
+
+.Button {
+	position: relative;
+}
+
+.GoogleButton {
+	padding: 10px;
+}
+
+.SearchIcon {
+	height: 32px;
+}
+
+.Icon {
+	height: 32px;
+}
