@@ -1,6 +1,13 @@
 .WeatherContainer {
 	display: flex;
 	justify-content: center;
+	float: left;
+	position: relative;
+	top: 164px;
+	left: 18.5%;
+	border: 1px solid #9eb77b;
+	padding: 5px;
+	padding-bottom: 15px;
 }
 
 .WeatherInfo {

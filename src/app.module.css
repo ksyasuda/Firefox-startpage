@@ -1,3 +1,7 @@
 .Fox {
 	margin-top: 3%;
+	width: 150px;
+	fill: dodgerblue;
+	background-color: #381637;
+	border-radius: 50%;
 }

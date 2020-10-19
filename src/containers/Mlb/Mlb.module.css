@@ -62,7 +62,7 @@
 .Title {
 	text-align: center;
 	position: relative;
-	left: 21px;
+	left: 15px;
 	top: 20px;
 	color: #bf5b51;
 	padding: 15px;
@@ -71,6 +71,11 @@
 .BigContainer {
 	width: 30%;
 	position: relative;
-	left: 33.5%;
+	left: 50.5%;
 	top: -20px;
+}
+
+.Detail {
+	font-size: 16px;
+	color: #a8d385;
 }

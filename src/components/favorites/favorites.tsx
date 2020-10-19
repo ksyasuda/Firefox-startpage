@@ -1,16 +1,17 @@
 import React from "react"
 import classes from "./favorites.module.css"
 import LinksWrapper from "../LinksWrapper/LinksWrapper"
-import Code from "../../assets/icons/code.svg"
+import Code from "../../assets/code.svg"
 
 const Favorites: React.FC<{}> = () => {
 	return (
-		<LinksWrapper icon={Code}>
+		<LinksWrapper color='#a8d385' icon={Code}>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
 					href='https://www.sudacode.com'
 					rel='noreferrer'
+					target='__blank'
 				>
 					Sudacode
 				</a>
@@ -20,6 +21,7 @@ const Favorites: React.FC<{}> = () => {
 					className={classes.Link}
 					href='https://www.hackerrank.com/dashboard'
 					rel='noreferrer'
+					target='__blank'
 				>
 					Hackerrank
 				</a>
@@ -29,6 +31,7 @@ const Favorites: React.FC<{}> = () => {
 					className={classes.Link}
 					href='https://stackoverflow.com'
 					rel='noreferrer'
+					target='__blank'
 				>
 					Stackoverflow
 				</a>
@@ -38,6 +41,7 @@ const Favorites: React.FC<{}> = () => {
 					className={classes.Link}
 					href='https://umich.instructure.com/login?needs_cookies=1'
 					rel='noreferrer'
+					target='__blank'
 				>
 					Canvas
 				</a>
@@ -47,6 +51,7 @@ const Favorites: React.FC<{}> = () => {
 					className={classes.Link}
 					href='https://dashboard.heroku.com/apps'
 					rel='noreferrer'
+					target='__blank'
 				>
 					Heroku
 				</a>

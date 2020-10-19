@@ -30,10 +30,12 @@
 
 .Icon {
 	margin-bottom: 10px;
+	width: 55px;
+	border-radius: 25%;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
 	.BigContainer {
-		width: 18%;
+		width: 20%;
 	}
 }

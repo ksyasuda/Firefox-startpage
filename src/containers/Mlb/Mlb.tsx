@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
-import classes from "./Scores.module.css"
+import classes from "./Mlb.module.css"
 import axios from "axios"
 
-const Scores: React.FC<{}> = () => {
+const Mlb: React.FC<{}> = () => {
 	const [mlb, setMlb] = useState({
 		score: -1,
 		oppScore: -1,
@@ -12,6 +12,7 @@ const Scores: React.FC<{}> = () => {
 		theTeamAbv: "",
 		oppTeamAbv: "",
 		status: "",
+		detail: "",
 	})
 
 	useEffect(() => {
@@ -29,16 +30,17 @@ const Scores: React.FC<{}> = () => {
 							`https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard/${eventid}`
 						)
 						.then(res => {
-							console.log(res)
+							//console.log(res)
 							const competitors = [
 								...res.data.competitions[0].competitors,
 							]
 							const {
 								description,
+								detail,
 							} = res.data.competitions[0].status.type
 							let tscore, oscore, team, oteam, abv, oabv
 							for (let comp of competitors) {
-								console.log(comp)
+								//console.log(comp)
 								const { displayName, abbreviation } = comp.team
 								const { score } = comp
 								if (abbreviation === "LAD") {
@@ -60,6 +62,7 @@ const Scores: React.FC<{}> = () => {
 								theTeamAbv: abv,
 								oppTeamAbv: oabv,
 								status: description,
+								detail: detail,
 							})
 						})
 						.catch(err => console.error(err.message))
@@ -83,9 +86,10 @@ const Scores: React.FC<{}> = () => {
 					<span className={classes.OtherScore}>{mlb.oppScore}</span>
 				</p>
 				<p className={classes.Status}>{mlb.status}</p>
+				<p className={classes.Detail}>{mlb.detail}</p>
 			</div>
 		</div>
 	)
 }
 
-export default Scores
+export default Mlb

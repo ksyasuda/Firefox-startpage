@@ -11,7 +11,8 @@
 }
 
 .Link:hover {
-	color: #ff492f;
+	color: #56a7b5;
+	font-weight: bold;
 }
 
 .Link:active {

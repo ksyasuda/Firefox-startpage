@@ -1,10 +1,16 @@
 import React from "react"
 import Button from "@material-ui/core/Button"
 import classes from "./gsearch.module.css"
-import Search from "../../assets/icons/search.svg"
-import Icon from "../../assets/icons/google.svg"
+import Search from "../../assets/search.svg"
+import Icon from "../../assets/google.svg"
 
 const gsearch: React.FC<{}> = () => {
+	const onSubmitHandler = (event: Event) => {
+		event.preventDefault()
+		const form: any = document.getElementById("textField")
+		form.submit()
+		form.reset()
+	}
 	return (
 		<div
 			id='gSearch'
@@ -21,6 +27,9 @@ const gsearch: React.FC<{}> = () => {
 				className={classes.Search}
 				action='https://google.com/search'
 				method='get'
+				target='__blank'
+				autoComplete='on'
+				onSubmit={(event: any) => onSubmitHandler(event)}
 			>
 				<Button
 					variant='text'
