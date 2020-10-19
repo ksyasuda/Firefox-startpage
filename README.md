@@ -1,3 +1,43 @@
+---
+title: "Sudacode Startpage"
+date: "Mon Oct 19 15:42:34 2020"
+---
+
+# Sudacode Startpage
+
+This startpage was heavily inspired by [this page](https://github.com/dbuxy218/Prismatic-Night "Startpage") that I found while browsing the [startpages subreddit](https://www.reddit.com/r/startpages/ "Startpages Reddit").
+
+One of the major differences betwen the two starpages is that my version was written from the ground-up in React.js, while the page by `dbuxy218` is written in Vanilla HTML/css/JavaScript.
+
+There are two other features that are completed at the moment. First is that I am making use of the [hidden ESPN API endpoints](https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b) to query for scores and udpates from my favorite sports teams.
+
+The next feature that I included is the current temperature, high/low, descriptin, and wind speed provided by [OpenStreetMap](https://www.openstreetmap.org/#map=5/38.007/-95.844 "OpenStreetMap")
+
+In the future, I plan to include more scores for golf, basketball, and possibly others. I would also like to get it to query the latest news stories and display that somewhere on the screen.
+
+---
+
+## Setting as Firefox Home Page
+
+First download the soruce code to your machine with
+
+```sh
+git clone https://github.com/ksyasuda/Firefox-startpage.git
+```
+
+After you have the source code downloaded go into the downloaded folder with `cd firefox-startpage`
+
+Once inside the `Firefox-startpage` project folder do the following:
+
+1. run `yarn install` to download the dependencies
+2. run `yarn build` to run webpack and generate the `build` folder
+3. In the home section of the Firefox preferences, it should say Homepage and New Windows. In the drop-down beside that, select Custom URLs
+4. Set the custom url to `~/path_to_firefox-startpage/build/index.html`
+
+Then when you go to the Firefox Home page you should see the Sudacode Startpage instead.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
