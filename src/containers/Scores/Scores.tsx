@@ -17,7 +17,7 @@ const Scores: React.FC<{}> = () => {
 	useEffect(() => {
 		axios
 			.get(
-				"http://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/lad"
+				"https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/teams/lad"
 			)
 			.then(data => {
 				const { nextEvent } = data.data.team
@@ -26,7 +26,7 @@ const Scores: React.FC<{}> = () => {
 					// get game data
 					axios
 						.get(
-							`http://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard/${eventid}`
+							`https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard/${eventid}`
 						)
 						.then(res => {
 							console.log(res)
