@@ -1,0 +1,15 @@
+.WeatherContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.WeatherInfo {
+	margin-top: 2%;
+	padding: 10px;
+	color: #9eb77b;
+}
+
+.Icon {
+	margin-right: 5px;
+	padding: 2px;
+}

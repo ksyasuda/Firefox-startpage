@@ -1,0 +1,39 @@
+.Container {
+	display: block;
+	background-color: #222d32;
+	border-radius: 8px;
+	padding: 5px;
+	margin: 0 25px;
+}
+
+.Link {
+	text-decoration: none;
+	color: #8f8c84;
+}
+
+.Link:hover {
+	color: #00cf35;
+}
+
+.Link:active {
+	color: #55aebb;
+}
+
+.LinkWrapper {
+	color: #a0bb7c;
+	margin: 10px 0px;
+}
+
+.BigContainer {
+	width: 12%;
+}
+
+.Icon {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 1400px) {
+	.BigContainer {
+		width: 18%;
+	}
+}
