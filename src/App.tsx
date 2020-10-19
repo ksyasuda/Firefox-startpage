@@ -15,6 +15,12 @@ function App() {
 		<div className='App' style={{ position: "relative", top: "75px" }}>
 			<Helmet>
 				<style>{"body { background-color: #263238}"}</style>
+				<title>{"Sudacode Startpage"}</title>
+				<link
+					rel='icon'
+					type='image/png'
+					href='./src/assets/favicon.ico'
+				/>
 			</Helmet>
 			<img src={Fox} alt='Firefox' className={classes.Fox} />
 			<h1 style={{ color: "#6b2144" }}>Welcome Freud</h1>
