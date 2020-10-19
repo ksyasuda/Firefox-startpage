@@ -11,8 +11,9 @@ const Weather: React.FC<{}> = () => {
 	const [wind, setWind] = useState(null)
 	useEffect(() => {
 		const prom1 = axios.get(
-			`https://api.openweathermap.org/data/2.5/weather?q=Ann+Arbor&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`
+			`https://api.openweathermap.org/data/2.5/weather?q=Ann+Arbor&units=imperial&appid=${process.env.WEATHER_KEY}`
 		)
+		//`https://api.openweathermap.org/data/2.5/weather?q=Ann+Arbor&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`
 		prom1.then((res: any) => {
 			console.log(res)
 			const { main, weather, wind } = res.data
