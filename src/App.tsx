@@ -8,11 +8,12 @@ import Favorites from "./components/favorites/favorites"
 import Docs from "./components/Docs/Docs"
 import Media from "./components/Media/Media"
 import MoreLinks from "./components/MoreLinks/MoreLinks"
+import Scores from "./containers/Scores/Scores"
 import "./App.css"
 
 function App() {
 	return (
-		<div className='App' style={{ position: "relative", top: "75px" }}>
+		<div className='App' style={{ position: "relative", top: "18px" }}>
 			<Helmet>
 				<style>{"body { background-color: #263238}"}</style>
 				<title>{"Sudacode Startpage"}</title>
@@ -31,6 +32,7 @@ function App() {
 					display: "flex",
 					justifyContent: "center",
 					marginTop: "2%",
+					position: "relative",
 				}}
 			>
 				<Favorites />
@@ -38,6 +40,7 @@ function App() {
 				<Media />
 				<MoreLinks />
 			</div>
+			<Scores />
 		</div>
 	)
 }
