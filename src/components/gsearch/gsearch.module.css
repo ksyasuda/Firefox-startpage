@@ -53,3 +53,13 @@
 		left: 20%;
 	}
 }
+
+@media (max-width: 600px) {
+	.InputBox {
+		width: 60%;
+	}
+	.Container {
+		width: 90%;
+		left: 5%;
+	}
+}

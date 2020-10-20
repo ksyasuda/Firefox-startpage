@@ -93,3 +93,17 @@
 		left: 3px;
 	}
 }
+
+@media (max-width: 600px) {
+	.BigContainer {
+		position: relative;
+		width: 88%;
+		left: 2%;
+		padding-bottom: 20px;
+		top: 9%;
+	}
+	.Title {
+		position: relative;
+		top: 25px;
+	}
+}

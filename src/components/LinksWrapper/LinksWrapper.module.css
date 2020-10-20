@@ -39,3 +39,13 @@
 		width: 24%;
 	}
 }
+
+@media (max-width: 600px) {
+	.BigContainer {
+		width: 50%;
+	}
+	.Container {
+		padding: 2px;
+		margin: 0 5px;
+	}
+}
