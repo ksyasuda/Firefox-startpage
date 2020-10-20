@@ -62,7 +62,7 @@
 .Title {
 	text-align: center;
 	position: relative;
-	left: 15px;
+	left: -208px;
 	top: 20px;
 	color: #bf5b51;
 	padding: 15px;
@@ -92,6 +92,15 @@
 		position: relative;
 		left: 3px;
 	}
+	.Title {
+		left: 26px;
+	}
+}
+
+@media (max-width: 900px) {
+	.Title {
+		left: 18px;
+	}
 }
 
 @media (max-width: 600px) {
@@ -103,7 +112,7 @@
 		top: 9%;
 	}
 	.Title {
-		position: relative;
 		top: 25px;
+		left: 26px;
 	}
 }

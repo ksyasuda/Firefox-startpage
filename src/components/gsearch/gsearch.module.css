@@ -56,10 +56,10 @@
 
 @media (max-width: 600px) {
 	.InputBox {
-		width: 60%;
+		width: 54%;
 	}
 	.Container {
-		width: 90%;
-		left: 5%;
+		width: 95%;
+		left: 2.5%;
 	}
 }
