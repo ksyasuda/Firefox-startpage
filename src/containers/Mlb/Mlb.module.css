@@ -79,3 +79,17 @@
 	font-size: 16px;
 	color: #a8d385;
 }
+
+@media (max-width: 1300px) {
+	.BigContainer {
+		width: 30%;
+		left: 60%;
+	}
+	.Teams {
+		left: -8px;
+	}
+	.Scores {
+		position: relative;
+		left: 3px;
+	}
+}

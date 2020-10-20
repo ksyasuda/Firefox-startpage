@@ -13,7 +13,7 @@ import "./App.css"
 
 function App() {
 	return (
-		<div className='App' style={{ position: "relative", top: "-40px" }}>
+		<div className={classes.Container}>
 			<Helmet>
 				<style>{"body { background-color: #263238}"}</style>
 				<title>{"Sudacode Startpage"}</title>

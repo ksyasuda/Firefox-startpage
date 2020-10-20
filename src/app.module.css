@@ -5,3 +5,16 @@
 	background-color: #381637;
 	border-radius: 50%;
 }
+
+.Container {
+	text-align: center;
+	position: relative;
+	top: -40px;
+}
+
+@media (max-width: 1300px) {
+	.Container {
+		position: relative;
+		top: 5px;
+	}
+}

@@ -20,3 +20,11 @@
 	margin-right: 5px;
 	padding: 2px;
 }
+
+@media (max-width: 1300px) {
+	.WeatherContainer {
+		left: 7%;
+		top: 174px;
+		width: 45%;
+	}
+}

@@ -12,7 +12,7 @@
 	-webkit-appearance: none;
 	color: dodgerblue;
 	text-align: center;
-	width: 95%;
+	width: 70%;
 	top: 10px;
 }
 
@@ -36,8 +36,20 @@
 	top: 8px;
 }
 
-@media (min-width: 800px) {
+.Container {
+	display: flex;
+	justifycontent: center;
+	position: relative;
+	width: 40%;
+	left: 30%;
+}
+
+@media (max-width: 1300px) {
 	.InputBox {
 		width: 70%;
+	}
+	.Container {
+		width: 60%;
+		left: 20%;
 	}
 }

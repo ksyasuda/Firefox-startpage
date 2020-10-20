@@ -12,16 +12,7 @@ const gsearch: React.FC<{}> = () => {
 		form.reset()
 	}
 	return (
-		<div
-			id='gSearch'
-			style={{
-				display: "flex",
-				justifyContent: "center",
-				position: "relative",
-				width: "40%",
-				left: "30%",
-			}}
-		>
+		<div id='gSearch' className={classes.Container}>
 			<form
 				id='textField'
 				className={classes.Search}
