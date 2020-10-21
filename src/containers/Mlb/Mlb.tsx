@@ -3,6 +3,10 @@ import classes from "./Mlb.module.css"
 import axios from "axios"
 
 const Mlb: React.FC<{}> = () => {
+	const [colors, setColors] = useState({
+		TB: { abbrev: "TB", color: "#092C5C" },
+		LAD: { abbrev: "LAD", color: "#0057a5" },
+	})
 	const [mlb, setMlb] = useState({
 		score: -1,
 		oppScore: -1,
@@ -13,6 +17,8 @@ const Mlb: React.FC<{}> = () => {
 		oppTeamAbv: "",
 		status: "",
 		detail: "",
+		color1: "",
+		color2: "",
 	})
 
 	useEffect(() => {
@@ -53,6 +59,14 @@ const Mlb: React.FC<{}> = () => {
 									oabv = abbreviation
 								}
 							}
+							let color1: string = ""
+							let color2: string = ""
+							switch (oabv) {
+								case "TB":
+									color2 = colors.TB.color
+									break
+							}
+							color1 = colors.LAD.color
 							setMlb({
 								score: tscore,
 								oppScore: oscore,
@@ -63,6 +77,8 @@ const Mlb: React.FC<{}> = () => {
 								oppTeamAbv: oabv,
 								status: description,
 								detail: detail,
+								color1: color1,
+								color2: color2,
 							})
 						})
 						.catch(err => console.error(err.message))
@@ -71,14 +87,29 @@ const Mlb: React.FC<{}> = () => {
 			.catch(err => console.error(err.message))
 	}, [])
 
+	const style1 = {
+		color: mlb.color1,
+		backgroundColor: "white",
+		marginRight: "2px",
+	}
+
+	const style2 = {
+		color: mlb.color2,
+		backgroundColor: "#9c6263",
+	}
+
 	return (
 		<div className={classes.BigContainer}>
 			<h2 className={classes.Title}>MLB</h2>
 			<div className={classes.Container}>
 				<div className={classes.Teams}>
-					<span className={classes.Dodgers}>{mlb.theTeam}</span>
+					<span className={classes.Dodgers} style={style1}>
+						{mlb.theTeam}
+					</span>
 					<span className={classes.Divider}>vs.</span>
-					<span className={classes.Other}>{mlb.oppTeam}</span>
+					<span className={classes.Other} style={style2}>
+						{mlb.oppTeam}
+					</span>
 				</div>
 				<p className={classes.Scores}>
 					<span className={classes.DodgerScore}>{mlb.score}</span> -

@@ -18,11 +18,15 @@
 .Scores {
 	font-size: 18px;
 	color: white;
+	position: relative;
+	left: -2px;
 }
 
 .Status {
 	font-size: 16px;
 	color: orange;
+	position: relative;
+	left: -2px;
 }
 
 .DodgerScore {
@@ -62,7 +66,7 @@
 .Title {
 	text-align: center;
 	position: relative;
-	left: -208px;
+	left: -224px;
 	top: 20px;
 	color: #bf5b51;
 	padding: 15px;
@@ -78,6 +82,8 @@
 .Detail {
 	font-size: 16px;
 	color: #a8d385;
+	position: relative;
+	left: -2px;
 }
 
 @media (max-width: 1300px) {
