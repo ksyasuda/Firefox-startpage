@@ -90,7 +90,7 @@ const Mlb: React.FC<{}> = () => {
 	const style1 = {
 		color: mlb.color1,
 		backgroundColor: "white",
-		marginRight: "2px",
+		marginRight: "3px",
 	}
 
 	const style2 = {
