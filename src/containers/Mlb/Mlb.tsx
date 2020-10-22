@@ -3,7 +3,7 @@ import classes from "./Mlb.module.css"
 import axios from "axios"
 
 const Mlb: React.FC<{}> = () => {
-	const [colors, setColors] = useState({
+	const colors = useState({
 		TB: { abbrev: "TB", color: "#092C5C" },
 		LAD: { abbrev: "LAD", color: "#0057a5" },
 	})
@@ -20,6 +20,10 @@ const Mlb: React.FC<{}> = () => {
 		color1: "",
 		color2: "",
 	})
+
+	const color1 = colors[0].LAD.color
+	const color2 = colors[0].TB.color
+
 
 	useEffect(() => {
 		axios
@@ -63,10 +67,10 @@ const Mlb: React.FC<{}> = () => {
 							let color2: string = ""
 							switch (oabv) {
 								case "TB":
-									color2 = colors.TB.color
+									color2 = colors[0].TB.color
 									break
 							}
-							color1 = colors.LAD.color
+							color1 = colors[0].LAD.color
 							setMlb({
 								score: tscore,
 								oppScore: oscore,
@@ -85,7 +89,7 @@ const Mlb: React.FC<{}> = () => {
 				}
 			})
 			.catch(err => console.error(err.message))
-	}, [colors.LAD.color, colors.TB.color])
+	}, [color1, color2, colors])
 
 	const style1 = {
 		color: mlb.color1,
