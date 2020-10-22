@@ -86,6 +86,12 @@
 	left: -2px;
 }
 
+@media (max-width: 2000px) {
+	.Title {
+		left: 18px;
+	}
+}
+
 @media (max-width: 1300px) {
 	.BigContainer {
 		width: 30%;
