@@ -5,7 +5,7 @@ import DocsIcon from "../../assets/note.svg"
 
 const Docs: React.FC<{}> = () => {
 	return (
-		<LinksWrapper color='#fc855a' icon={DocsIcon}>
+		<LinksWrapper color='#fc855a' icon={DocsIcon} id='docs'>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
@@ -49,11 +49,11 @@ const Docs: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html'
+					href='https://reactjs.org/docs/getting-started.html'
 					rel='noreferrer'
 					target='__blank'
 				>
-					EMACS
+					React
 				</a>
 			</p>
 		</LinksWrapper>

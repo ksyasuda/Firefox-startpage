@@ -15,7 +15,7 @@ const Weather: React.FC<{}> = () => {
 		)
 		//`https://api.openweathermap.org/data/2.5/weather?q=Ann+Arbor&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`
 		prom1.then((res: any) => {
-			console.log(res)
+			// console.log(res)
 			const { main, weather, wind } = res.data
 			setCurrentWeather(main.temp)
 			setFeelsLike(main.feels_like)

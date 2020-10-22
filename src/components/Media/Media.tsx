@@ -5,7 +5,7 @@ import Entertainment from "../../assets/video.svg"
 
 const Media: React.FC<{}> = () => {
 	return (
-		<LinksWrapper color='#56a7b5' icon={Entertainment}>
+		<LinksWrapper color='#56a7b5' icon={Entertainment} id='media'>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}

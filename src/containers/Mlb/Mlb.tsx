@@ -85,7 +85,7 @@ const Mlb: React.FC<{}> = () => {
 				}
 			})
 			.catch(err => console.error(err.message))
-	}, [])
+	}, [colors.LAD.color, colors.TB.color])
 
 	const style1 = {
 		color: mlb.color1,

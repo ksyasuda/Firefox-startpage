@@ -5,7 +5,7 @@ import Code from "../../assets/code.svg"
 
 const Favorites: React.FC<{}> = () => {
 	return (
-		<LinksWrapper color='#a8d385' icon={Code}>
+		<LinksWrapper color='#a8d385' icon={Code} id='favorites'>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}

@@ -5,7 +5,7 @@ import School from "../../assets/school.svg"
 
 const MoreLinks: React.FC<{}> = () => {
 	return (
-		<LinksWrapper color='#FFCB05' icon={School}>
+		<LinksWrapper color='#FFCB05' icon={School} id='morelinks'>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
@@ -51,7 +51,6 @@ const MoreLinks: React.FC<{}> = () => {
 					className={classes.Link}
 					href='https://jisho.org/'
 					rel='noreferrer'
-					target='__blank'
 				>
 					Jisho
 				</a>
