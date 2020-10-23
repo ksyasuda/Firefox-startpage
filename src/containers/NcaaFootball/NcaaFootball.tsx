@@ -22,7 +22,7 @@ const NcaaFootball = () => {
 	})
 
 	useEffect(() => {
-		const url = `http://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/130`
+		const url = `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/130`
 		axios
 			.get(url)
 			.then(res => {
