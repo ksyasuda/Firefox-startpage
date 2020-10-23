@@ -103,6 +103,7 @@
 	position: relative;
 	left: 2%;
 	top: -285px;
+	height: 100px;
 }
 
 .Detail {
@@ -114,7 +115,11 @@
 
 @media (max-width: 2000px) {
 	.Title {
-		left: -1px;
+		left: 55px;
+	}
+	.SmallContainer {
+		position: relative;
+		left: 6%;
 	}
 }
 
