@@ -82,7 +82,7 @@ const NcaaFootball = () => {
 					</span>
 					<span className={classes.Divider}>vs.</span>
 					<span className={classes.Other}>
-						<span className={classes.Rank}>{other.rank}</span>
+						<span className={classes.OtherRank}>{other.rank}</span>
 						<img src={other.logo} alt='Logo' width='40px' />
 						<span className={classes.OtherName}>{other.name}</span>
 					</span>
