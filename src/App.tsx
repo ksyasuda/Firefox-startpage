@@ -9,6 +9,7 @@ import Docs from "./components/Docs/Docs"
 import Media from "./components/Media/Media"
 import MoreLinks from "./components/MoreLinks/MoreLinks"
 import Mlb from "./containers/Mlb/Mlb"
+import NcaaFootball from "./containers/NcaaFootball/NcaaFootball"
 import "./App.css"
 
 function App() {
@@ -21,8 +22,6 @@ function App() {
 			<img src={Fox} alt='Firefox' className={classes.Fox} />
 			<h1 style={{ color: "#6b2144" }}>Welcome Freud</h1>
 			<Gsearch />
-			<Weather />
-			<Mlb />
 			<div
 				style={{
 					display: "flex",
@@ -36,6 +35,9 @@ function App() {
 				<Media />
 				<MoreLinks />
 			</div>
+			<Weather />
+			<Mlb />
+			<NcaaFootball />
 		</div>
 	)
 }

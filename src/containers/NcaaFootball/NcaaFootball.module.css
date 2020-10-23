@@ -1,4 +1,4 @@
-.Container {
+.SmallContainer {
 	display: block;
 	border: 1px solid dodgerblue;
 	width: 100%;
@@ -12,7 +12,19 @@
 	display: inline-flex;
 	justify-content: center;
 	position: relative;
-	left: -23px;
+	left: -3px;
+}
+
+.Rank {
+	font-weight: bold;
+	font-size: 18px;
+	color: #00274c;
+}
+
+.OtherRank {
+	font-weight: bold;
+	font-size: 18px;
+	color: #fc855a;
 }
 
 .Scores {
@@ -22,28 +34,41 @@
 	left: -2px;
 }
 
-.Status {
+.Desc {
 	font-size: 16px;
 	color: orange;
 	position: relative;
 	left: -2px;
 }
 
-.DodgerScore {
+.MichScore {
 	color: #0057a5;
+}
+
+.MichName {
+	position: relative;
+	top: 8px;
+}
+
+.OtherName {
+	position: relative;
+	top: 10px;
+	left: 4px;
 }
 
 .OtherScore {
 	color: red;
 }
 
-.Dodgers {
-	color: #0057a5;
+.Michigan {
+	color: #00274c;
+	background-color: #ffcb05;
 	display: inline-flex;
 	padding: 5px;
 	margin-top: 5px;
 	float: left;
 	font-size: 18px;
+	position: relative;
 }
 
 .Other {
@@ -53,6 +78,7 @@
 	display: inline-flex;
 	margin-top: 5px;
 	float: left;
+	background-color: white;
 }
 
 .Divider {
@@ -66,17 +92,17 @@
 .Title {
 	text-align: center;
 	position: relative;
-	left: -224px;
 	top: 20px;
 	color: #bf5b51;
 	padding: 15px;
+	left: 20%;
 }
 
-.BigContainer {
+.Container {
 	width: 30%;
 	position: relative;
-	left: 65%;
-	top: -20px;
+	left: 2%;
+	top: -285px;
 }
 
 .Detail {
@@ -88,14 +114,16 @@
 
 @media (max-width: 2000px) {
 	.Title {
-		left: -210px;
+		left: -1px;
 	}
 }
 
 @media (max-width: 1300px) {
-	.BigContainer {
-		width: 30%;
-		left: 60%;
+	.Container {
+		width: 80%;
+		left: 8%;
+		position: relative;
+		top: -40px;
 	}
 	.Teams {
 		left: -8px;
@@ -116,12 +144,12 @@
 }
 
 @media (max-width: 600px) {
-	.BigContainer {
+	.Container {
 		position: relative;
 		width: 88%;
 		left: 2%;
 		padding-bottom: 20px;
-		top: 9%;
+		top: -60px;
 	}
 	.Title {
 		top: 25px;
