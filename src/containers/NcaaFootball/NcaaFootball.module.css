@@ -90,7 +90,6 @@
 }
 
 .Title {
-	text-align: center;
 	position: relative;
 	top: 20px;
 	color: #bf5b51;
@@ -126,7 +125,7 @@
 @media (max-width: 1300px) {
 	.Container {
 		width: 80%;
-		left: 8%;
+		left: 2%;
 		position: relative;
 		top: -40px;
 	}
@@ -138,13 +137,13 @@
 		left: 3px;
 	}
 	.Title {
-		left: 26px;
+		left: 76px;
 	}
 }
 
 @media (max-width: 900px) {
 	.Title {
-		left: 18px;
+		left: 64px;
 	}
 }
 
@@ -152,12 +151,12 @@
 	.Container {
 		position: relative;
 		width: 88%;
-		left: 2%;
+		left: -3.5%;
 		padding-bottom: 20px;
 		top: -60px;
 	}
 	.Title {
 		top: 25px;
-		left: 26px;
+		left: 42px;
 	}
 }
