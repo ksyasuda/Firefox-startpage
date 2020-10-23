@@ -4,16 +4,23 @@
 	float: left;
 	position: relative;
 	top: 170px;
-	left: 36%;
+	left: 36.1%;
 	border: 1px solid #9eb77b;
 	padding: 5px;
 	padding-bottom: 15px;
+	width: 530px;
 }
 
 .WeatherInfo {
 	margin-top: 2%;
 	padding: 10px;
 	color: #9eb77b;
+}
+
+.Title {
+	position: relative;
+	top: 13%;
+	color: #a8d385;
 }
 
 .Icon {

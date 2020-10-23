@@ -1,6 +1,6 @@
 .Container {
 	display: block;
-	border: 1px solid dodgerblue;
+	border: 1px solid #fc855a;
 	width: 100%;
 	padding: 10px;
 	margin-top: 3%;
@@ -68,7 +68,7 @@
 	position: relative;
 	left: -224px;
 	top: 20px;
-	color: #bf5b51;
+	color: #fc855a;
 	padding: 15px;
 }
 

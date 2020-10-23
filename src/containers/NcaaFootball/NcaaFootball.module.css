@@ -1,6 +1,6 @@
 .SmallContainer {
 	display: block;
-	border: 1px solid dodgerblue;
+	border: 1px solid #56a7b5;
 	width: 100%;
 	padding: 10px;
 	margin-top: 3%;
@@ -92,7 +92,7 @@
 .Title {
 	position: relative;
 	top: 20px;
-	color: #bf5b51;
+	color: #56a7b5;
 	padding: 15px;
 	left: 20%;
 }

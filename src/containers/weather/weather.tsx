@@ -11,7 +11,7 @@ const Weather: React.FC<{}> = () => {
 	const [wind, setWind] = useState(null)
 	useEffect(() => {
 		const prom1 = axios.get(
-			`https://api.openweathermap.org/data/2.5/weather?q=Ann+Arbor&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`
+			`https://api.openweathermap.org/data/2.5/weather?q=Ann+Arbor&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`,
 		)
 		//`https://api.openweathermap.org/data/2.5/weather?q=Ann+Arbor&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`
 		prom1.then((res: any) => {
@@ -27,20 +27,23 @@ const Weather: React.FC<{}> = () => {
 		prom1.catch(err => console.error(err.message))
 	}, [])
 	return (
-		<div className={classes.WeatherContainer}>
-			<span className={classes.WeatherInfo}> {currentWeather}℉</span>
-			<span className={classes.WeatherInfo}>
-				<span className={classes.Icon}></span> {feelsLike}℉
-			</span>
-			<span className={classes.WeatherInfo}>
-				: {highTemp}℉ / : {lowTemp}℉
-			</span>
-			<span className={classes.WeatherInfo}>
-				<span className={classes.Icon}> </span>
-				{description}
-			</span>
-			<span className={classes.WeatherInfo}>煮 {wind} MPH</span>
-		</div>
+		<>
+			<h2 className={classes.Title}>Weather </h2>
+			<div className={classes.WeatherContainer}>
+				<span className={classes.WeatherInfo}> {currentWeather}℉</span>
+				<span className={classes.WeatherInfo}>
+					<span className={classes.Icon}></span> {feelsLike}℉
+				</span>
+				<span className={classes.WeatherInfo}>
+					: {highTemp}℉ / : {lowTemp}℉
+				</span>
+				<span className={classes.WeatherInfo}>
+					<span className={classes.Icon}> </span>
+					{description}
+				</span>
+				<span className={classes.WeatherInfo}>煮 {wind} MPH</span>
+			</div>
+		</>
 	)
 }
 
