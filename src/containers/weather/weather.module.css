@@ -19,7 +19,7 @@
 
 .Title {
 	position: relative;
-	top: 13%;
+	top: 12.4%;
 	color: #a8d385;
 }
 
@@ -30,9 +30,14 @@
 
 @media (max-width: 1300px) {
 	.WeatherContainer {
-		left: 7%;
-		top: 174px;
-		width: 45%;
+		left: 4%;
+		top: 185px;
+		width: 50%;
+	}
+	.Title {
+		position: relative;
+		top: 180px;
+		left: -19.5%;
 	}
 }
 
