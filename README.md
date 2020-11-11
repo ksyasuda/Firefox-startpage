@@ -5,13 +5,13 @@ date: "Mon Oct 19 15:42:34 2020"
 
 # Sudacode Startpage
 
-This startpage was heavily inspired by [this page](https://github.com/dbuxy218/Prismatic-Night "Startpage") that I found while browsing the [startpages subreddit](https://www.reddit.com/r/startpages/ "Startpages Reddit").
+This startpage was heavily inspired by [this page](https://github.com/dbuxy218/Prismatic-Night "dbuxy's startpage") that I found while browsing the [startpages subreddit](https://www.reddit.com/r/startpages/ "Startpages Reddit").
 
 One of the major differences betwen the two starpages is that my version was written from the ground-up in React.js, while the page by `dbuxy218` is written in Vanilla HTML/css/JavaScript.
 
-There are two other features that are completed at the moment. First is that I am making use of the [hidden ESPN API endpoints](https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b) to query for scores and udpates from my favorite sports teams.
+There are two other features that are completed at the moment. First is that I am making use of the [hidden ESPN API endpoints](https://gist.github.com/akeaswaran/b48b02f1c94f873c6655e7129910fc3b "hidden ESPN API GitHub gist") to query for scores and udpates from my favorite sports teams.
 
-The next feature that I included is the current temperature, high/low, descriptin, and wind speed provided by [OpenStreetMap](https://www.openstreetmap.org/#map=5/38.007/-95.844 "OpenStreetMap")
+The next feature that I included is the current temperature, high/low, descriptin, and wind speed provided by [OpenWeatherMap](https://openweathermap.org/ "OpenWeatherMap homepage")
 
 In the future, I plan to include more scores for golf, basketball, and possibly others. I would also like to get it to query the latest news stories and display that somewhere on the screen.
 
