@@ -20,7 +20,7 @@
 .Title {
 	position: relative;
 	top: 205px;
-	width: 95%;
+	left: 10px;
 	color: #a8d385;
 }
 
@@ -53,5 +53,6 @@
 		potition: relative;
 		top: 15px;
 		left: 1%;
+		width: 95%;
 	}
 }
