@@ -10,9 +10,10 @@ const Weather: React.FC<{}> = () => {
 	const [description, setDescription] = useState(null)
 	const [wind, setWind] = useState(null)
 	useEffect(() => {
-		const prom1 = axios.get(
-			`https://api.openweathermap.org/data/2.5/weather?q=Ann+Arbor&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`,
-		)
+		// const LOCATION = 'Ann+Arbor'
+		const LOCATION = 'Los+Angeles'
+		const url = `https://api.openweathermap.org/data/2.5/weather?q=${LOCATION}&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`
+		const prom1 = axios.get(url)
 		//`https://api.openweathermap.org/data/2.5/weather?q=Ann+Arbor&units=imperial&appid=${process.env.REACT_APP_WEATHER_KEY}`
 		prom1.then((res: any) => {
 			// console.log(res)
