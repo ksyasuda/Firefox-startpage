@@ -21,6 +21,8 @@ const NcaaFootball = () => {
         shortDetail: "",
     })
 
+    const [score, setScore] = useState({michScore: -1, oppScore: -1})
+
     useEffect(() => {
         const url = `https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/130`
         axios
@@ -55,6 +57,7 @@ const NcaaFootball = () => {
                     }
                     return null
                 })
+
                 const {
                     description,
                     detail,
@@ -65,6 +68,20 @@ const NcaaFootball = () => {
                     detail: detail,
                     shortDetail: shortDetail,
                 })
+
+
+                const gameId = res.data.team.nextEvent[0].id
+                const url2 = `https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard/${gameId}`
+                axios.get(url2).then((response) => {
+                    const competitors = [...response.data.competitions[0].competitors]
+                    for(let i in competitors) {
+                        if(competitors[i].id === "130") {
+                            const mscore = (competitors[i].linescores[0].value)
+                            const oscore = (competitors[i].linescores[1].value)
+                            setScore({michScore: mscore, oppScore: oscore})
+                        }
+                    }
+                }).catch(err => {throw new Error(err.message)})
             })
             .catch(err => {
                 throw new Error(err.message)
@@ -100,6 +117,7 @@ const NcaaFootball = () => {
                 <div className={classes.Scores}>
                     <p className={classes.Desc}>{description.description}</p>
                     <p className={classes.Desc}>{description.detail}</p>
+                    <p className={classes.Desc}>{score.michScore} - {score.oppScore}</p>
                 </div>
             </div>
         </div>

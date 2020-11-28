@@ -3,25 +3,33 @@
 	justify-content: center;
 	float: left;
 	position: relative;
-	top: 200px;
-	left: 36.1%;
+	/* top: 200px; */
+	/* left: 36.1%; */
 	border: 1px solid #9eb77b;
 	padding: 5px;
 	padding-bottom: 15px;
 	width: 530px;
+	height: 173px;
+	left: 20px;
+	top: 22px;
 }
 
 .WeatherInfo {
 	margin-top: 2%;
 	padding: 10px;
 	color: #9eb77b;
+	position: relative;
+	top: 50px;
 }
 
 .Title {
 	position: relative;
-	top: 205px;
-	left: 10px;
+	/* top: 205px; */
+	/* left: 35.8%; */
+	left: 0px;
+	width: 30%;
 	color: #a8d385;
+	top: 25px;
 }
 
 .Icon {
@@ -32,13 +40,11 @@
 @media (max-width: 1300px) {
 	.WeatherContainer {
 		left: 4%;
-		top: 185px;
 		width: 50%;
 	}
 	.Title {
 		position: relative;
-		top: 180px;
-		left: -19.5%;
+		left: 15%;
 	}
 }
 
