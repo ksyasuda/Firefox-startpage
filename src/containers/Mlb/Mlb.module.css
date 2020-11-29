@@ -66,10 +66,11 @@
 .Title {
 	text-align: center;
 	position: relative;
-	left: -224px;
+	left: -294px;
 	top: 20px;
 	color: #fc855a;
 	padding: 15px;
+	width: 40%;
 }
 
 .BigContainer {
@@ -88,7 +89,7 @@
 
 @media (max-width: 2000px) {
 	.Title {
-		left: 18px;
+		left: 170px;
 	}
 }
 
@@ -105,13 +106,15 @@
 		left: 3px;
 	}
 	.Title {
-		left: 26px;
+		left: 134px;
+		width: 1%;
 	}
 }
 
 @media (max-width: 900px) {
 	.Title {
-		left: 18px;
+		left: 90px;
+		width: 1%;
 	}
 }
 
