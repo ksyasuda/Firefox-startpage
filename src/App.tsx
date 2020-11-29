@@ -36,8 +36,8 @@ function App() {
                 <MoreLinks />
             </div>
             <Weather />
-            <Mlb />
-            <NcaaFootball />
+            { /* <Mlb />  */} 
+            { /* <NcaaFootball /> */ }
         </div>
     )
 }
