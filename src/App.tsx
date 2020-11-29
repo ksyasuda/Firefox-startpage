@@ -8,8 +8,8 @@ import Favorites from "./components/favorites/favorites"
 import Docs from "./components/Docs/Docs"
 import Media from "./components/Media/Media"
 import MoreLinks from "./components/MoreLinks/MoreLinks"
-import Mlb from "./containers/Mlb/Mlb"
-import NcaaFootball from "./containers/NcaaFootball/NcaaFootball"
+// import Mlb from "./containers/Mlb/Mlb"
+// import NcaaFootball from "./containers/NcaaFootball/NcaaFootball"
 import "./App.css"
 
 function App() {
