@@ -51,6 +51,7 @@ const MoreLinks: React.FC<{}> = () => {
 					className={classes.Link}
 					href='https://jisho.org/'
 					rel='noreferrer'
+					target='__blank'
 				>
 					Jisho
 				</a>
