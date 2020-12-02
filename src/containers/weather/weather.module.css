@@ -20,6 +20,7 @@
 	color: #9eb77b;
 	position: relative;
 	top: 50px;
+	font-size: 18px;
 }
 
 .Title {
@@ -42,6 +43,9 @@
 		left: 14%;
 		width: 70%;
 	}
+	.WeatherInfo {
+		font-size: 16px;
+	}
 	.Title {
 		position: relative;
 		left: 34%;
@@ -60,6 +64,9 @@
 		top: 15px;
 		left: 1%;
 		width: 95%;
+	}
+	.WeatherInfo {
+		font-size: 15px;
 	}
 	#divider {
 		display: none;
