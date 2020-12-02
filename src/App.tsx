@@ -16,11 +16,14 @@ function App() {
     return (
         <div className={classes.Container}>
             <Helmet>
-                <style>{"body { background-color: #263238}"}</style>
+                {/* <style>{"body { background-color: #263238}"}</style>*/}
+                <style>{"body { background-color: #292f36}"}</style>
                 <title>{"Sudacode Startpage"}</title>
             </Helmet>
             <img src={Fox} alt='Firefox' className={classes.Fox} />
-            <h1 style={{ color: "#6b2144" }}>Welcome Freud</h1>
+            <h1 style={{ color: "#6b2144" }}>ようこそフロイト</h1>
+            {/* <h1 style={{ color: "#6b2144" }}>Welcome Freud</h1>*/ }
+            
             <Gsearch />
             <div
                 style={{

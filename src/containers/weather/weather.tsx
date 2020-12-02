@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faThermometerFull, faSun, faTemperatureHigh, faTemperatureLow, faCloudSunRain, faWind } from '@fortawesome/free-solid-svg-icons'
 import classes from "./weather.module.css"
 import axios from "axios"
 
@@ -31,18 +33,18 @@ const Weather: React.FC<{}> = () => {
 		<>
 			<h2 className={classes.Title}>Weather </h2>
 			<div className={classes.WeatherContainer}>
-				<span className={classes.WeatherInfo}> {currentWeather}℉</span>
+				<span className={classes.WeatherInfo}><FontAwesomeIcon icon={faThermometerFull}/>{currentWeather}℉</span>
 				<span className={classes.WeatherInfo}>
-					<span className={classes.Icon}></span> {feelsLike}℉
+					<span className={classes.Icon}><FontAwesomeIcon icon={faSun}/></span>{feelsLike}℉
 				</span>
 				<span className={classes.WeatherInfo}>
-					: {highTemp}℉ / : {lowTemp}℉
+					<FontAwesomeIcon icon={faTemperatureHigh}/> {highTemp}℉ <span id={classes.divider}>/</span> <FontAwesomeIcon icon={faTemperatureLow}/> {lowTemp}℉
 				</span>
 				<span className={classes.WeatherInfo}>
-					<span className={classes.Icon}> </span>
+					<span className={classes.Icon}><FontAwesomeIcon icon={faCloudSunRain}/></span>
 					{description}
 				</span>
-				<span className={classes.WeatherInfo}>煮 {wind} MPH</span>
+				<span className={classes.WeatherInfo}><FontAwesomeIcon icon={faWind}/> {wind} MPH</span>
 			</div>
 		</>
 	)

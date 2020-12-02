@@ -1,5 +1,6 @@
 .Search {
-	background-color: #222d32;
+	/*  background-color: #222d32; */
+	background-color: #1e2127;
 	width: 100%;
 	height: 60px;
 }
@@ -7,33 +8,38 @@
 .InputBox {
 	height: 39px;
 	position: relative;
-	background-color: #222d32;
+	background-color: #1e2127;
 	border: none;
 	-webkit-appearance: none;
 	color: dodgerblue;
 	text-align: center;
-	width: 70%;
+	width: 90%;
+	left: -5%;
 	top: 10px;
 }
 
 .Button {
 	position: relative;
+	display: none;
 }
 
 .GoogleButton {
 	padding: 10px;
+	display: none;
 }
 
 .SearchIcon {
 	height: 32px;
 	position: relative;
 	top: 8px;
+	display: none;
 }
 
 .Icon {
 	height: 32px;
 	position: relative;
 	top: 8px;
+	display: none;
 }
 
 .Container {
