@@ -37,12 +37,16 @@
 @media (max-width: 1300px) {
 	.BigContainer {
 		width: 24%;
+		position: relative;
+		top: 14px;
 	}
 }
 
 @media (max-width: 600px) {
 	.BigContainer {
 		width: 50%;
+		position: relative;
+		top: 14px;
 	}
 	.Container {
 		padding: 2px;

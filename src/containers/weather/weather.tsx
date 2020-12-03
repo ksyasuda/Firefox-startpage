@@ -33,13 +33,13 @@ const Weather: React.FC<{}> = () => {
 		<>
 			<h2 className={classes.Title}>Weather </h2>
 			<div className={classes.WeatherContainer}>
-				<span className={classes.WeatherInfo}><FontAwesomeIcon icon={faThermometerFull}/>{currentWeather}℉</span>
+				<span className={classes.WeatherInfo}><FontAwesomeIcon icon={faThermometerFull}/> {currentWeather}℉</span>
 				<span className={classes.WeatherInfo}>
-					<span className={classes.Icon}><FontAwesomeIcon icon={faSun}/></span>{feelsLike}℉
+					<span className={classes.Icon}><FontAwesomeIcon icon={faSun}/></span> {feelsLike}℉
 				</span>
-				<span className={classes.WeatherInfo}>
-					<FontAwesomeIcon icon={faTemperatureHigh}/> {highTemp}℉ <span id={classes.divider}>/</span> <FontAwesomeIcon icon={faTemperatureLow}/> {lowTemp}℉
-				</span>
+				<p className={classes.WeatherInfo} id={classes.HighLow}>
+					<FontAwesomeIcon icon={faTemperatureHigh}/> {highTemp}℉  <span id={classes.divider}>|</span> <FontAwesomeIcon icon={faTemperatureLow}/> {lowTemp}℉
+				</p>
 				<span className={classes.WeatherInfo}>
 					<span className={classes.Icon}><FontAwesomeIcon icon={faCloudSunRain}/></span>
 					{description}

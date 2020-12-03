@@ -43,7 +43,7 @@ const Media: React.FC<{}> = () => {
 					rel='noreferrer'
 					target='__blank'
 				>
-					Google News
+					GNews
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
@@ -53,7 +53,7 @@ const Media: React.FC<{}> = () => {
 					rel='noreferrer'
 					target='__blank'
 				>
-					YouTube TV
+					YT TV
 				</a>
 			</p>
 		</LinksWrapper>

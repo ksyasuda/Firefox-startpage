@@ -19,7 +19,7 @@
 	padding: 10px;
 	color: #9eb77b;
 	position: relative;
-	top: 50px;
+	top: 55px;
 	font-size: 18px;
 }
 
@@ -44,11 +44,15 @@
 		width: 70%;
 	}
 	.WeatherInfo {
-		font-size: 16px;
+		font-size: 17px;
+		padding: 5px;
 	}
 	.Title {
 		position: relative;
 		left: 34%;
+	}
+	#divider {
+		display: none;
 	}
 }
 
@@ -62,13 +66,19 @@
 	.Title {
 		potition: relative;
 		top: 15px;
-		left: 1%;
-		width: 95%;
+		left: 2.5%;
+		width: 99%;
 	}
 	.WeatherInfo {
-		font-size: 15px;
+		font-size: 18px;
+		padding: 10px;
+		top: 42px;
 	}
 	#divider {
 		display: none;
+	}
+	#HighLow {
+		position: relative;
+		top: 22px;
 	}
 }
