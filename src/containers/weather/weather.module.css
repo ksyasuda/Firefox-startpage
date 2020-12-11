@@ -20,7 +20,7 @@
 	color: #9eb77b;
 	position: relative;
 	top: 55px;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 .Title {
@@ -70,7 +70,7 @@
 		width: 99%;
 	}
 	.WeatherInfo {
-		font-size: 18px;
+		font-size: 17px;
 		padding: 10px;
 		top: 42px;
 	}
@@ -79,6 +79,6 @@
 	}
 	#HighLow {
 		position: relative;
-		top: 22px;
+		top: 24px;
 	}
 }
