@@ -5,6 +5,8 @@ date: "Mon Oct 19 15:42:34 2020"
 
 # Sudacode Startpage
 
+![image of startpage](https://imagizer.imageshack.com/img924/9029/4Y9NV5.png)
+
 This startpage was heavily inspired by [this page](https://github.com/dbuxy218/Prismatic-Night "dbuxy's startpage") that I found while browsing the [startpages subreddit](https://www.reddit.com/r/startpages/ "Startpages Reddit").
 
 One of the major differences betwen the two starpages is that my version was written from the ground-up in React.js, while the page by `dbuxy218` is written in Vanilla HTML/css/JavaScript.
