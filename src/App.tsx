@@ -21,9 +21,8 @@ function App() {
                 <title>{"Sudacode Startpage"}</title>
             </Helmet>
             <img src={Fox} alt='Firefox' className={classes.Fox} />
-            <h1 style={{ color: "#6b2144" }}>ようこそフロイト</h1>
-            {/* <h1 style={{ color: "#6b2144" }}>Welcome Freud</h1>*/ }
-            
+            {/* <h1 style={{ color: "#6b2144" }}>ようこそフロイト</h1> */}
+            <h1 style={{ color: "#6b2144" }}>ようこそみなさん</h1>
             <Gsearch />
             <div
                 style={{

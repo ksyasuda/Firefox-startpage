@@ -20,7 +20,7 @@
 	color: #9eb77b;
 	position: relative;
 	top: 55px;
-	font-size: 18px;
+	font-size: 17px;
 }
 
 .Title {
@@ -58,16 +58,16 @@
 
 @media (max-width: 600px) {
 	.WeatherContainer {
-		width: 90%;
+		width: 94%;
 		position: relative;
 		top: 20px;
-		left: 3.5%;
+		left: 1.2%;
 	}
 	.Title {
 		potition: relative;
 		top: 15px;
-		left: 2.5%;
-		width: 99%;
+		left: 6.5%;
+		width: 90%;
 	}
 	.WeatherInfo {
 		font-size: 18px;
@@ -79,6 +79,6 @@
 	}
 	#HighLow {
 		position: relative;
-		top: 22px;
+		top: 24px;
 	}
 }
