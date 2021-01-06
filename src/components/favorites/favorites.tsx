@@ -49,11 +49,11 @@ const Favorites: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://dashboard.heroku.com/apps'
+					href='https://www.udemy.com/home/my-courses/learning/'
 					rel='noreferrer'
 					target='__blank'
 				>
-					Heroku
+					Udemy
 				</a>
 			</p>
 		</LinksWrapper>

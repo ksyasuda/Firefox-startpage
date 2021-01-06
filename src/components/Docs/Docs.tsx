@@ -19,7 +19,7 @@ const Docs: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://docs.python.org/3.7/library/index.html'
+					href='https://docs.python.org/3.7/'
 					rel='noreferrer'
 					target='__blank'
 				>

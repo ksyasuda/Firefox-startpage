@@ -29,7 +29,7 @@ const Media: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://www.reddit.com/'
+					href='https://www.reddit.com/user/sudacode'
 					rel='noreferrer'
 					target='__blank'
 				>
