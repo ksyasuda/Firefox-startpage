@@ -38,8 +38,8 @@ function App() {
                 <Media />
                 <MoreLinks />
             </div>
-            {/* <Weather /> */}
-			<Todo />
+            <Weather />
+			{/* <Todo /> */}
             { /* <Mlb />  */} 
             { /* <NcaaFootball /> */ }
         </div>
