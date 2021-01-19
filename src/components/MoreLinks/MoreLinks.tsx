@@ -9,31 +9,31 @@ const MoreLinks: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://eecs485staff.github.io/eecs485.org/'
+					href='https://piazza.com/class/kjyqengtdso7l9?cid=6'
 					rel='noreferrer'
 					target='__blank'
 				>
-					EECS 485
+				EECS 441
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://web.eecs.umich.edu/~weimerw/481/'
+					href='https://piazza.com/class/kjsswud2hrj649'
 					rel='noreferrer'
 					target='__blank'
 				>
-					EECS 481
+					EECS 492
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://eecs285.github.io/eecs285.org/'
+					href='https://piazza.com/class/kjumyiqcbaf2po'
 					rel='noreferrer'
 					target='__blank'
 				>
-					EECS 285
+					EECS 493
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
