@@ -9,7 +9,7 @@ const MoreLinks: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://piazza.com/class/kjyqengtdso7l9?cid=6'
+					href='http://soloway.pbworks.com/w/page/142754205/441%20Winter%202021'
 					rel='noreferrer'
 					target='__blank'
 				>
