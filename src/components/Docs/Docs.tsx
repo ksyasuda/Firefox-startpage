@@ -39,11 +39,11 @@ const Docs: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://www.typescriptlang.org/docs/'
+					href='https://archlinux.org/'
 					rel='noreferrer'
 					target='__blank'
 				>
-					TypeScript
+					Arch
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
