@@ -9,7 +9,7 @@ const MoreLinks: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href="https://piazza.com/class/knq1d0ixyj6u7"
+					href="https://umich.instructure.com/courses/438824"
 					rel="noreferrer"
 					target="__blank"
 				>
