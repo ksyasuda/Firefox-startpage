@@ -19,6 +19,16 @@ const MoreLinks: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
+					href="https://piazza.com/class/knq1d0ixyj6u7"
+					rel="noreferrer"
+					target="__blank"
+				>
+					484 Piazza
+				</a>
+			</p>
+			<p className={classes.LinkWrapper}>
+				<a
+					className={classes.Link}
 					href="http://pages.cs.wisc.edu/~dbbook/"
 					rel="noreferrer"
 					target="__blank"
@@ -34,16 +44,6 @@ const MoreLinks: React.FC<{}> = () => {
 					target="__blank"
 				>
 					Gradescope
-				</a>
-			</p>
-			<p className={classes.LinkWrapper}>
-				<a
-					className={classes.Link}
-					href="https://piazza.com/class/knq1d0ixyj6u7"
-					rel="noreferrer"
-					target="__blank"
-				>
-					Piazza
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
