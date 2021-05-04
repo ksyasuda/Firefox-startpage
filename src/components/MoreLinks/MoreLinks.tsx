@@ -1,47 +1,47 @@
-import React from "react"
-import LinksWrapper from "../LinksWrapper/LinksWrapper"
-import classes from "./MoreLinks.module.css"
-import School from "../../assets/school.svg"
+import React from "react";
+import LinksWrapper from "../LinksWrapper/LinksWrapper";
+import classes from "./MoreLinks.module.css";
+import School from "../../assets/school.svg";
 
 const MoreLinks: React.FC<{}> = () => {
 	return (
-		<LinksWrapper color='#FFCB05' icon={School} id='morelinks'>
+		<LinksWrapper color="#FFCB05" icon={School} id="morelinks">
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='http://soloway.pbworks.com/w/page/142754205/441%20Winter%202021'
-					rel='noreferrer'
-					target='__blank'
+					href="https://piazza.com/class/knq1d0ixyj6u7"
+					rel="noreferrer"
+					target="__blank"
 				>
-				EECS 441
+					EECS 484
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://piazza.com/class/kjsswud2hrj649'
-					rel='noreferrer'
-					target='__blank'
+					href="http://pages.cs.wisc.edu/~dbbook/"
+					rel="noreferrer"
+					target="__blank"
 				>
-					EECS 492
+					DB Textbook
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://piazza.com/class/kjumyiqcbaf2po'
-					rel='noreferrer'
-					target='__blank'
+					href="https://www.gradescope.com/courses/266436"
+					rel="noreferrer"
+					target="__blank"
 				>
-					EECS 493
+					Gradescope
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://piazza.com/class/k9vihaw2wd07b0'
-					rel='noreferrer'
-					target='__blank'
+					href="https://piazza.com/class/knq1d0ixyj6u7"
+					rel="noreferrer"
+					target="__blank"
 				>
 					Piazza
 				</a>
@@ -49,15 +49,15 @@ const MoreLinks: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://jisho.org/'
-					rel='noreferrer'
-					target='__blank'
+					href="https://jisho.org/"
+					rel="noreferrer"
+					target="__blank"
 				>
 					Jisho
 				</a>
 			</p>
 		</LinksWrapper>
-	)
-}
+	);
+};
 
-export default MoreLinks
+export default MoreLinks;
