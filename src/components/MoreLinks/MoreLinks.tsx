@@ -39,11 +39,11 @@ const MoreLinks: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href="https://www.gradescope.com/courses/266436"
+					href="https://mail.google.com/mail/u/1/#inbox"
 					rel="noreferrer"
 					target="__blank"
 				>
-					Gradescope
+					Gmail
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
