@@ -39,17 +39,17 @@ const Media: React.FC<{}> = () => {
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://news.google.com/topstories?hl=en-US&gl=US&ceid=US:en'
+					href='https://theathletic.com/'
 					rel='noreferrer'
 					target='__blank'
 				>
-					GNews
+					The Athletic
 				</a>
 			</p>
 			<p className={classes.LinkWrapper}>
 				<a
 					className={classes.Link}
-					href='https://tv.youtube.com/welcome/?zipcode=48103'
+					href='https://tv.youtube.com/'
 					rel='noreferrer'
 					target='__blank'
 				>
